@@ -2,10 +2,10 @@ import { Camera, Award, Users, Heart } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const stats = [
-  { icon: Camera, number: "500+", label: "Sesiones Realizadas" },
-  { icon: Award, number: "50+", label: "Premios Obtenidos" },
-  { icon: Users, number: "300+", label: "Clientes Satisfechos" },
-  { icon: Heart, number: "8+", label: "Años de Experiencia" }
+  { icon: Camera, number: "1000+", label: "Proyectos Completados" },
+  { icon: Award, number: "25+", label: "Reconocimientos" },
+  { icon: Users, number: "150+", label: "Clientes Corporativos" },
+  { icon: Heart, number: "12+", label: "Años de Trayectoria" }
 ];
 
 const About = () => {
@@ -16,17 +16,17 @@ const About = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Sobre <span className="text-golden">Mí</span>
+              Sobre <span className="text-golden">Nosotros</span>
             </h2>
             <div className="space-y-6 text-muted-foreground text-lg">
               <p>
-                Soy un fotógrafo profesional con más de 8 años de experiencia capturando momentos únicos e irrepetibles. Mi pasión por la fotografía comenzó como un hobby y se convirtió en mi profesión cuando me di cuenta del poder que tienen las imágenes para contar historias.
+                Con más de una década de experiencia en el sector fotográfico, nuestro estudio se ha consolidado como referente en servicios de fotografía profesional de alta gama. Especializados en retratos corporativos, eventos institucionales y documentación arquitectónica.
               </p>
               <p>
-                Mi estilo se caracteriza por la búsqueda de la luz natural, las composiciones elegantes y la capacidad de capturar emociones genuinas. Cada sesión es una oportunidad para crear arte junto a mis clientes.
+                Nuestro enfoque técnico y artístico se fundamenta en el dominio de la iluminación profesional, la composición clásica y el uso de equipamiento de última generación. Cada proyecto es abordado con la rigurosidad y profesionalismo que nuestros clientes corporativos e institucionales requieren.
               </p>
               <p>
-                Especializado en retratos, bodas y fotografía de paisaje, mi objetivo es crear imágenes que no solo documenten un momento, sino que transmitan las emociones y la belleza de cada instante único.
+                Ofrecemos servicios integrales de fotografía que incluyen sesiones en estudio, locaciones externas, post-producción avanzada y entrega en formatos digitales de alta resolución, garantizando resultados que satisfacen los más altos estándares de calidad profesional.
               </p>
             </div>
           </div>
@@ -51,9 +51,9 @@ const About = () => {
         {/* Philosophy Section */}
         <div className="mt-20 text-center">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-8">Mi Filosofía</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-8">Filosofía Profesional</h3>
             <blockquote className="text-2xl italic text-muted-foreground leading-relaxed">
-              "La fotografía es el arte de hacer visible lo invisible, de capturar no solo lo que vemos, sino lo que sentimos. Cada click del obturador es una oportunidad de crear algo eterno."
+              "La excelencia fotográfica se alcanza mediante la combinación de técnica depurada, visión artística y compromiso profesional. Cada imagen debe reflejar no solo competencia técnica, sino también integridad artística y respeto por el cliente."
             </blockquote>
             <div className="w-24 h-1 bg-golden mx-auto mt-8"></div>
           </div>

@@ -17,7 +17,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold text-foreground">
-            Fotografía<span className="text-golden">Pro</span>
+            Estudio <span className="text-golden">Fotográfico</span>
           </div>
           
           {/* Desktop Menu */}
@@ -38,7 +38,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('sobre-mi')}
               className="text-foreground hover:text-golden transition-colors"
             >
-              Sobre Mí
+              Sobre Nosotros
             </button>
             <button 
               onClick={() => scrollToSection('contacto')}
@@ -79,7 +79,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection('sobre-mi')}
                 className="text-left text-foreground hover:text-golden transition-colors"
               >
-                Sobre Mí
+                Sobre Nosotros
               </button>
               <button 
                 onClick={() => scrollToSection('contacto')}

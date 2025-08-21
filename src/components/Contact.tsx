@@ -8,9 +8,9 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: MapPin, label: "Ubicación", value: "Madrid, España" },
-  { icon: Phone, label: "Teléfono", value: "+34 600 123 456" },
-  { icon: Mail, label: "Email", value: "hola@fotografiapro.com" },
+  { icon: MapPin, label: "Ubicación", value: "Asunción, Paraguay" },
+  { icon: Phone, label: "Teléfono", value: "+595 21 123 456" },
+  { icon: Mail, label: "Email", value: "contacto@estudiofotografico.com.py" },
   { icon: Clock, label: "Horario", value: "Lun-Vie 9:00-18:00" }
 ];
 
@@ -62,12 +62,12 @@ const Contact = () => {
     <section id="contacto" className="py-20 bg-gray-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Hablemos de tu <span className="text-golden">Proyecto</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            ¿Tienes una idea en mente? Me encantaría conocer tu visión y crear algo increíble juntos.
-          </p>
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                Nuestros <span className="text-golden">Servicios</span>
+              </h3>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Nos especializamos en servicios fotográficos profesionales de alta calidad para empresas e instituciones.
+              </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -93,23 +93,23 @@ const Contact = () => {
 
             {/* Additional Info */}
             <Card className="p-6 mt-8 bg-card">
-              <h4 className="text-xl font-bold text-foreground mb-4">¿Por qué elegirme?</h4>
+              <h4 className="text-xl font-bold text-foreground mb-4">Nuestros Estándares</h4>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-golden mr-2">•</span>
-                  Más de 8 años de experiencia profesional
+                  Más de 12 años de experiencia profesional certificada
                 </li>
                 <li className="flex items-start">
                   <span className="text-golden mr-2">•</span>
-                  Estilo único y personalizado para cada cliente
+                  Equipamiento profesional de última generación
                 </li>
                 <li className="flex items-start">
                   <span className="text-golden mr-2">•</span>
-                  Entrega rápida y profesional
+                  Entrega puntual y procesos estandarizados
                 </li>
                 <li className="flex items-start">
                   <span className="text-golden mr-2">•</span>
-                  Presupuestos competitivos y transparentes
+                  Presupuestos transparentes y competitivos
                 </li>
               </ul>
             </Card>
@@ -169,9 +169,9 @@ const Contact = () => {
                     className="mt-1 w-full px-3 py-2 bg-background border border-input rounded-md focus:ring-2 focus:ring-ring focus:border-transparent"
                   >
                     <option value="">Selecciona un servicio</option>
-                    <option value="retratos">Sesión de Retratos</option>
-                    <option value="bodas">Fotografía de Bodas</option>
-                    <option value="eventos">Eventos Corporativos</option>
+                    <option value="retratos">Retratos Corporativos</option>
+                    <option value="bodas">Eventos Institucionales</option>
+                    <option value="eventos">Fotografía Arquitectónica</option>
                     <option value="productos">Fotografía de Productos</option>
                     <option value="otros">Otros</option>
                   </select>
@@ -187,7 +187,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   className="mt-1"
                   rows={5}
-                  placeholder="Cuéntame sobre tu proyecto, fechas, ubicación y cualquier detalle importante..."
+                  placeholder="Describa los requerimientos de su proyecto, fechas programadas, ubicación y especificaciones técnicas necesarias..."
                   required
                 />
               </div>

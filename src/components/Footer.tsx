@@ -12,11 +12,11 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Camera className="w-8 h-8 text-golden mr-2" />
               <h3 className="text-2xl font-bold">
-                Fotografía<span className="text-golden">Pro</span>
+                Estudio<span className="text-golden">Fotográfico</span>
               </h3>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Creando memorias que duran para siempre. Especialista en retratos, bodas y fotografía de paisaje con más de 8 años de experiencia profesional.
+              Servicios fotográficos profesionales de alta calidad. Especializados en retratos corporativos, eventos institucionales y documentación arquitectónica con más de 12 años de experiencia.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-golden transition-colors">
@@ -25,10 +25,10 @@ const Footer = () => {
               <a href="#" className="text-gray-300 hover:text-golden transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="mailto:hola@fotografiapro.com" className="text-gray-300 hover:text-golden transition-colors">
+              <a href="mailto:contacto@estudiofotografico.com.py" className="text-gray-300 hover:text-golden transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
-              <a href="tel:+34600123456" className="text-gray-300 hover:text-golden transition-colors">
+              <a href="tel:+59521123456" className="text-gray-300 hover:text-golden transition-colors">
                 <Phone className="w-6 h-6" />
               </a>
             </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                   onClick={() => document.getElementById('sobre-mi')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-300 hover:text-golden transition-colors"
                 >
-                  Sobre Mí
+                  Sobre Nosotros
                 </button>
               </li>
               <li>
@@ -77,11 +77,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-golden">Servicios</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Sesiones de Retratos</li>
-              <li>Fotografía de Bodas</li>
-              <li>Eventos Corporativos</li>
-              <li>Fotografía de Paisaje</li>
-              <li>Sesiones Familiares</li>
+              <li>Retratos Corporativos</li>
+              <li>Eventos Institucionales</li>
+              <li>Documentación Arquitectónica</li>
+              <li>Fotografía de Productos</li>
+              <li>Reportajes Empresariales</li>
             </ul>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © {currentYear} FotografíaPro. Todos los derechos reservados.
+            © {currentYear} Estudio Fotográfico. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-300 hover:text-golden text-sm transition-colors">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import portraitImage from "@/assets/portrait-1.jpg";
 import weddingImage from "@/assets/wedding-1.jpg";
-import landscapeImage from "@/assets/landscape-1.jpg";
+import lapachosImage from "@/assets/lapachos-asuncion.jpg";
 
 const categories = [
   { id: 'todos', label: 'Todos' },
@@ -14,10 +14,10 @@ const categories = [
 const galleryItems = [
   { id: 1, category: 'retratos', image: portraitImage, title: 'Retrato Profesional', description: 'Sesión de estudio con iluminación natural' },
   { id: 2, category: 'bodas', image: weddingImage, title: 'Momento Íntimo', description: 'Capturando la esencia del amor' },
-  { id: 3, category: 'paisajes', image: landscapeImage, title: 'Atardecer Dorado', description: 'La magia de la hora dorada' },
+  { id: 3, category: 'paisajes', image: lapachosImage, title: 'Lapachos de Asunción', description: 'La belleza primaveral de los lapachos rosados' },
   { id: 4, category: 'retratos', image: portraitImage, title: 'Expresión Natural', description: 'Retrato espontáneo y genuino' },
   { id: 5, category: 'bodas', image: weddingImage, title: 'Ceremonia Elegante', description: 'Documentando el día más especial' },
-  { id: 6, category: 'paisajes', image: landscapeImage, title: 'Naturaleza Salvaje', description: 'La belleza en estado puro' }
+  { id: 6, category: 'paisajes', image: lapachosImage, title: 'Primavera Urbana', description: 'Los lapachos transformando la ciudad' }
 ];
 
 const Gallery = () => {
