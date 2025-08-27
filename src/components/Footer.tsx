@@ -9,7 +9,42 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4">import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://your-project.supabase.co'
+const supabaseKey = 'YOUR_PUBLIC_ANON_KEY'
+export const supabase = createClient(supabaseUrl, supabaseKey)import { supabase } from '../supabaseClient' // ajusta ruta según tu estructura
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  // ...validación...
+
+  // Guardar en supabase
+  const { data, error } = await supabase
+    .from('contacto')
+    .insert([
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+      },
+    ]);
+
+  if (error) {
+    // Mostrar error o toast de error
+    toast({
+      title: "Error al guardar en Supabase",
+      description: error.message,
+      variant: "destructive"
+    });
+    return;
+  }
+
+  // El resto: abrir WhatsApp, limpiar formulario, mostrar toast...
+}
               <Camera className="w-8 h-8 text-golden mr-2" />
               <h3 className="text-2xl font-bold">
                 Titulo<span className="text-golden">Pagina</span>
