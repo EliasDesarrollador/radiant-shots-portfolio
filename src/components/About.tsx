@@ -3,8 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const stats = [
   { icon: Camera, number: "1000+", label: "Proyectos Completados" },
-  { icon: Award, number: "25+", label: "Reconocimientos" },
-  { icon: Users, number: "150+", label: "Clientes Corporativos" },
+  { icon: Users, number: "150+", label: "Clientes " },
   { icon: Heart, number: "12+", label: "Años de Trayectoria" }
 ];
 

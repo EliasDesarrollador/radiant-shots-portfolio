@@ -22,11 +22,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-          Fotografía
-          <span className="block text-golden">de Excelencia</span>
+          Capturando 
+          <span className="block text-golden">momentos únicos  </span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
-          Servicios fotográficos profesionales de la más alta calidad. Especializados en retratos ejecutivos, eventos corporativos y documentación arquitectónica.
+          Servicios fotográficos de la más alta calidad. Especializados en retratos, eventos corporativos , bodas y fotografía de productos.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
@@ -35,7 +35,7 @@ const Hero = () => {
             size="lg"
             className="bg-golden hover:bg-golden-dark text-primary border-golden hover:border-golden-dark font-semibold px-8 py-3"
           >
-            Ver Portfolio
+            Ver Galería
           </Button>
           <Button 
             variant="outline"

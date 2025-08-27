@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import portraitImage from "@/assets/portrait-1.jpg";
 import weddingImage from "@/assets/wedding-1.jpg";
 import lapachosImage from "@/assets/lapachos-asuncion.jpg";
+import asuncionImage from "@/assets/asuncion-.jpg";
+import palaciodelopezImage from "@/assets/palaciodelopez.jpg";
 
 const categories = [
   { id: 'todos', label: 'Todos' },
@@ -12,12 +14,13 @@ const categories = [
 ];
 
 const galleryItems = [
-  { id: 1, category: 'retratos', image: portraitImage, title: 'Retrato Profesional', description: 'Sesión de estudio con iluminación natural' },
-  { id: 2, category: 'bodas', image: weddingImage, title: 'Momento Íntimo', description: 'Capturando la esencia del amor' },
-  { id: 3, category: 'paisajes', image: lapachosImage, title: 'Lapachos de Asunción', description: 'La belleza primaveral de los lapachos rosados' },
+    { id: 3, category: 'paisajes', image: lapachosImage, title: 'Lapachos de Asunción', description: 'La belleza primaveral de los lapachos rosados' },
   { id: 4, category: 'retratos', image: portraitImage, title: 'Expresión Natural', description: 'Retrato espontáneo y genuino' },
   { id: 5, category: 'bodas', image: weddingImage, title: 'Ceremonia Elegante', description: 'Documentando el día más especial' },
-  { id: 6, category: 'paisajes', image: lapachosImage, title: 'Primavera Urbana', description: 'Los lapachos transformando la ciudad' }
+  { id: 6, category: 'paisajes', image: lapachosImage, title: 'Primavera Urbana', description: 'Los lapachos transformando la ciudad' },
+  { id: 7, category: 'paisajes', image: asuncionImage, title: 'Asunción', description: 'Paisaje urbano en la ciudad de Asunción' },
+  { id: 8, category: 'paisajes', image: palaciodelopezImage, title: 'Palacio de López', description: 'Vista del emblemático Palacio de López' },
+
 ];
 
 const Gallery = () => {
@@ -32,10 +35,10 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Mi <span className="text-golden">Portfolio</span>
+            Mi <span className="text-golden">Galeria</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Una selección de mis trabajos más representativos, organizados por categorías
+            Una selección de mis trabajos más representativos.
           </p>
         </div>
 

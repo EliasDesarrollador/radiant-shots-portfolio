@@ -17,7 +17,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold text-foreground">
-            Estudio <span className="text-golden">Fotográfico</span>
+            Titulo <span className="text-golden">Pagina </span>
           </div>
           
           {/* Desktop Menu */}
