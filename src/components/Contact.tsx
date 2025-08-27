@@ -31,7 +31,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -42,10 +41,16 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
+    // Construir mensaje para WhatsApp
+    const whatsappNumber = "595976393314"; // Tu número con formato internacional
+    const mensaje = `¡Hola! Mi nombre es ${formData.name}%0AEmail: ${formData.email}%0ATeléfono: ${formData.phone}%0AServicio: ${formData.service}%0AMensaje: ${formData.message}`;
+    const urlWhatsapp = `https://wa.me/${whatsappNumber}?text=${mensaje}`;
+
+    window.open(urlWhatsapp, '_blank');
+
     toast({
-      title: "¡Mensaje enviado!",
-      description: "Gracias por tu interés. Te contactaré pronto.",
+      title: "Redirigiendo a WhatsApp...",
+      description: "Completa el envío del mensaje en WhatsApp.",
     });
 
     // Reset form

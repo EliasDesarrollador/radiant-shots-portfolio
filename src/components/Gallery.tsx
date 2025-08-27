@@ -85,7 +85,13 @@ const Gallery = () => {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="bg-golden hover:bg-golden-dark text-primary font-semibold px-8 py-3 rounded-full transition-colors duration-300 shadow-soft hover:shadow-golden">
+          <button 
+            className="bg-golden hover:bg-golden-dark text-primary font-semibold px-8 py-3 rounded-full transition-colors duration-300 shadow-soft hover:shadow-golden"
+            onClick={() => {
+              const section = document.getElementById('carrusel');
+              if (section) section.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Ver Más Trabajos
           </button>
         </div>
